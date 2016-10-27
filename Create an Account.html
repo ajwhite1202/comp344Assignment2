@@ -1,89 +1,84 @@
 <html>
-<head> <title> Create an Account </title>
+<head>
+     <title> Create an Account </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-<h1> Create an Account </h1>
-
-<form>
-<table>
-<tr><td>First name: <input type="text" name="firstname" /> </td></tr>
-<tr><td>Last name: <input type="text" name="lastname" /></td></tr>
-<tr><td>Email: <input type="text" name="Email" /></td></tr>
-<tr><td>Password: <input type="text" name="Password" /></td></tr>
-<tr><td>Confirm Password: <input type="text" name=" Confirm Password" /></td></tr>
-
-<tr><td> <h2> <br>Registration Address </h2></td></tr>
-<tr><td>Street No: <input type="text" name="StreetNo" /></td></tr>
-<tr><td>Street Name: <input type="text" name="StreetName" /></td></tr>
-<tr><td>Suburb: <input type="text" name="Suburb" /></td></tr>
-<tr><td>State: <input type="text" name="State" /></td></tr>
-<tr><td>PostCode: <input type="text" name="Postcode" /></td></tr>
-<tr><td>Country: <select "questions" name="SecretQuestion1"/>
-	<option value="0">Select your Country</option>
-    <option value="01">Australia</option>
-    <option value="02">America</option>
-    <option value="03">China</option>
-	<option value="04">New Zealand</option>
-</td></tr>
-<tr><td>Contact Number: <input type="text" name="ContactNumber" /></td></tr>
-
-<tr><td> <h2> <br>Secret Questions </h2></td></tr>
-<tr><td>Secret Question 1: <select "questions" name="SecretQuestion1" />
-	<option value="0">Select your secret question</option>
-    <option value="01">What is your favourite pet's name?</option>
-    <option value="02">Who is your greatest inspiration?</option>
-    <option value="03">What is your nickname?</option>
-	<option value="04">What was your first car?</option>
-</td></tr>
-<tr><td>Answer 1: <input type="text" name="Answer1" /></td></tr>
-
-<tr><td>Secret Question 2: <select "questions" name="SecretQuestion2" />
-	<option value="0">Select your secret question</option>
-    <option value="01">What is your favourite pet's name?</option>
-    <option value="02">Who is your greatest inspiration?</option>
-    <option value="03">What is your nickname?</option>
-	<option value="04">What was your first car?</option>
-</td></tr>
-<tr><td>Answer 2: <input type="text" name="Answer2" /></td></tr>
-
-<tr><td><p2> By Registering, you agree that you have read and accepted our User Agreement, you aare at least 18 years old, and you consent to our Privacy Policy</p2> </td></tr>
-
-<tr><td><input type="submit" name="Register"/></tr></td>
-
-</td></tr>
-</table>
-</form>
-<footer>
-<p>Condition of Use   Privacy Policy   Contact Us</p>
-</footer>
-
-
-
-
+<div class="container col-xs-12">
+    <div class="container">
+    <h1>Create your Account</h1>
+    </div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="fullName" class="control-label col-xs-2">Full name</label>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Full Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">Email</label>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="control-label col-xs-2">Password</label>
+            <div class="col-xs-6">
+                <input type="password" class="form-control" id="inputCurrentPassword" placeholder="Set your Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword" class="control-label col-xs-2">Confirm Password</label>
+            <div class="col-xs-6">
+                <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="SecretQuestion1" class="control-label col-xs-2">Secret Question 1</label>
+               <div class="col-xs-6">
+                <select class="form-control" id="secretquestionlistopt">
+                    <option>What is your mother's madien name?</option>
+                    <option>What is your favourite subject at school?</option>
+                    <option>What is the name of your first pet?</option>
+                    <option>What was the name of the hospital you were born in?</option>
+                 </select>
+                </div>
+        </div>
+        <div class="form-group">
+            <label for="SecretQuestion1Answer" class="control-label col-xs-2">Answer</label>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" id="Answer1" placeholder="Your answer to secret question 1">
+            </div>
+        </div>        
+       <div class="form-group">
+            <label for="SecretQuestion2" class="control-label col-xs-2">Secret Question 2</label>
+               <div class="col-xs-6">
+                <select class="form-control" id="secretquestionlistopt">
+                    <option>What is your mother's madien name?</option>
+                    <option>What is your favourite subject at school?</option>
+                    <option>What is the name of your first pet?</option>
+                    <option>What was the name of the hospital you were born in?</option>
+                 </select>
+                </div>
+        </div>
+        <div class="form-group">
+            <label for="SecretQuestion2Answer" class="control-label col-xs-2">Answer</label>
+            <div class="col-xs-6">
+                <input type="text" class="form-control" id="Answer2" placeholder="Your answer to secret question 2">
+            </div>
+        </div>                                       
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-6">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="panel-footer col-xs-12">
+        <p>Condition of Use   Privacy Policy   Contact Us</p>
+</div>
 
 </html>
