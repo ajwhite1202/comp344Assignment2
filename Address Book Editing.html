@@ -1,16 +1,25 @@
 <html>
-<head> <title> Address Book Adding </title>
-<link href="css/custom.css" rel="stylesheet">
+<head> 
+<title> Address Book Adding </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div class="container col-xs-12">
+<div class="container col-md-12">
     <div class="container">
     		<h1>Address Book</h1>
  	</div>
 
-<div class="container col-xs-offset-2 col-xs-12">
-	<div class="row col-xs-6">
+<div class="container col-md-offset-2 col-md-12">
+	<div class="row col-md-6">
 	<div class="panel panel-default ">
 	  <div class="panel-heading"><h3>Primary Address</h3><span class="glyphicon glyphicon-edit"></span></div>
 	  <div class="panel-body">
@@ -22,8 +31,8 @@
 	</div>
 	</div>
 </div>
-<div class="container col-xs-offset-2 col-xs-12">
-	<div class="row col-xs-6">
+<div class="container col-md-offset-2 col-md-12">
+	<div class="row col-md-6">
 	<div class="panel panel-default">
 	  <div class="panel-body">
 	    <p>Full Name</p>
@@ -35,38 +44,38 @@
 	</div>
 </div>
 
-<div class="container col-xs-12">
+<div class="container col-md-12">
     <div class="container">
     		<h2>Edit Address</h2>
     </div>
 	<form class="form-horizontal">
 		 <div class="form-group">
-            <label for="fullName" class="control-label col-xs-2">Name</label>
-            <div class="col-xs-6">
+            <label for="fullName" class="control-label col-md-2">Name</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="fullName" placeholder="Please enter your name">
             </div>
 		</div>
         <div class="form-group">
-            <label for="StreetNumber" class="control-label col-xs-2">Street Number</label>
-            <div class="col-xs-6">
+            <label for="StreetNumber" class="control-label col-md-2">Street Number</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="StreetNumber" placeholder="Please enter your street number">
             </div>
         </div>
 		 <div class="form-group">
-            <label for="StreetName" class="control-label col-xs-2">Street Name</label>
-            <div class="col-xs-6">
+            <label for="StreetName" class="control-label col-md-2">Street Name</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="StreetName" placeholder="Please enter your street number">
             </div>
 		</div>
 		<div class="form-group">
-            <label for="Suburb" class="control-label col-xs-2">Suburb</label>
-            <div class="col-xs-6">
+            <label for="Suburb" class="control-label col-md-2">Suburb</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="Suburb" placeholder="Please enter your Suburb">
             </div>
 		</div>
 		<div class="form-group">
-                <label for="State" class="control-label col-xs-2">State</label>
-                   <div class="col-xs-6">
+                <label for="State" class="control-label col-md-2">State</label>
+                   <div class="col-md-6">
                     <select class="form-control" name="State">
                         <option>NSW</option>
 						<option>NSW</option>
@@ -81,35 +90,35 @@
                     </div>
             </div>
 		<div class="form-group">
-            <label for="PostCode" class="control-label col-xs-2">PostCode</label>
-            <div class="col-xs-6">
+            <label for="PostCode" class="control-label col-md-2">PostCode</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="PostCode" placeholder="Please enter your PostCode">
             </div>
 		</div>
 		<div class="form-group">
-            <label for="Country" class="control-label col-xs-2">Country</label>
-            <div class="col-xs-6">
+            <label for="Country" class="control-label col-md-2">Country</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="Country" placeholder="Please enter your Country">
             </div>
 		</div>
 		<div class="form-group">
-            <label for="ContactNumber" class="control-label col-xs-2">Contact Number</label>
-            <div class="col-xs-6">
+            <label for="ContactNumber" class="control-label col-md-2">Contact Number</label>
+            <div class="col-md-6">
                 <input type="text" class="form-control" name="ContactNumber" placeholder="Please enter your Contact Number">
             </div>
 		</div>
         <div class="form-group">
-                <span class="form-control-description col-xs-2">Make this card Primary</span>
+                <span class="form-control-description col-md-2">Make this card Primary</span>
                 <input type="checkbox" class="custom-control-input">
         </div>     	
 		<div class="form-group">
-			<div class="col-xs-offset-2 col-xs-6">
+			<div class="col-md-offset-2 col-md-6">
                 <button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
 		</div>
 	</body>
-	<div class="panel-footer col-xs-12">
+	<div class="panel-footer col-md-12">
         <p>Condition of Use   Privacy Policy   Contact Us</p>
 	</div>
 </html>
