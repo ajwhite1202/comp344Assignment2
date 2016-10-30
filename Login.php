@@ -41,8 +41,7 @@
                   <div class="col-xs-6">
                       <p class="lead"><h3>Don't have an account?</h3></p>
                         <span style="font-size:15em;" class="glyphicon glyphicon-user col-md-offset-2"></span>
-
-                      <p><a href="./Register.jsp" class="btn btn-primary btn-block">Register</a></p>
+                      <p><a href="CreateAccount.php" class="btn btn-primary btn-block">Register</a></p>
                   </div>
               </div>
           </div>
