@@ -32,16 +32,16 @@
                               <div class="form-group">
                                   <label for="password" class="control-label">Password</label>
                                   <input type="password" class="form-control" name="inputCurrentPassword" placeholder="password" value="" required="" title="Please enter your password">
-                                  <span class="help-block"><a href="">Forgot your password?</a></span>
+                                  <span class="help-block"><a href="PasswordResetEmail.php">Forgot your password?</a></span>
                               </div>
-                              <button type="submit" value="login" name="submit" class="btn btn-success btn-block">Login</button>
+                              <button type="submit" value="login" name="submit" class="btn btn-primary btn-block">Login</button>
                           </form>
                       </div>
                   </div>
                   <div class="col-xs-6">
                       <p class="lead"><h3>Don't have an account?</h3></p>
                         <span style="font-size:15em;" class="glyphicon glyphicon-user col-md-offset-2"></span>
-                      <p><a href="CreateAccount.php" class="btn btn-primary btn-block">Register</a></p>
+                      <p><a class="btn btn-info btn-block" href="CreateAccount.php">Register</a></p>
                   </div>
               </div>
           </div>
