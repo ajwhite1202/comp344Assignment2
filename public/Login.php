@@ -1,22 +1,19 @@
-
+<html>
 <head>
-     <title>COMP344:Create an Account </title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-</head>
+  <title></title>
+  <?php require_once '../php/styles.php'; ?>
+  <style>
 
+  </style>
+</head>
 <body>
+<?php require '../php/nav.php'; ?>
+
+<div class="container content">
     <div id="login-overlay" class="modal-dialog">
       <div class="modal-content">
           <div class="modal-header">
-              <h4 class="modal-title" id="myModalLabel">Login to <b>COMP344</b></h4>
+              <h4 class="modal-title" id="myModalLabel">Login to <b>SURS</b></h4>
           </div>
           <div class="modal-body">
               <div class="row">
@@ -31,7 +28,7 @@
                               </div>
                               <div class="form-group">
                                   <label for="password" class="control-label">Password</label>
-                                  <input type="password" class="form-control" name="inputCurrentPassword" placeholder="password" value="" required="" title="Please enter your password">
+                                  <input type="password" class="form-control" name="inputCurrentPassword" placeholder="Password" value="" required="" title="Please enter your password">
                                   <span class="help-block"><a href="PasswordResetEmail.php">Forgot your password?</a></span>
                               </div>
                               <button type="submit" value="login" name="submit" class="btn btn-primary btn-block">Login</button>
@@ -46,12 +43,8 @@
               </div>
           </div>
       </div>
-
   </div>
-<script type="text/javascript">
-
-</script>
-<footer>
-<?php include("includes/footer.html"); ?>
-
-</footer>
+</div>
+<?php require '../php/footer.php'; ?>
+</body>
+</html>
