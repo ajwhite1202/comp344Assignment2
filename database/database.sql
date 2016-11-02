@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      ShopperRegistration                                     */
-/* Created on:     26/10/2016 2:08:03 PM                         */
+/* Created on:     26/10/2016 2:09:05 PM                         */
 /*==============================================================*/
 
 
@@ -12,13 +12,13 @@
 CREATE TABLE Shopper (
 sh_id                   INT NOT NULL AUTO_INCREMENT,
 sh_username             VARCHAR(30) NOT NULL,
-sh_password             CHAR(60) NOT NULL,
+sh_password             CHAR(255) NOT NULL,
 sh_email                VARCHAR(64) NOT NULL,
 sh_phone                VARCHAR(45) NOT NULL,
-sh_type                 CHAR(1) NOT NULL,
-sh_group                INT NOT NULL,
-sh_field1               VARCHAR(128) NOT NULL,
-sh_field2               VARCHAR(128) NOT NULL,
+sh_type                 CHAR(1) NULL,
+sh_group                INT NULL,
+sh_field1               VARCHAR(128) NULL,
+sh_field2               VARCHAR(128) NULL,
 PRIMARY KEY (sh_id)
 );
 
