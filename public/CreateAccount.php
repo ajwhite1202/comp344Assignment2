@@ -44,6 +44,12 @@
                             </select>
                     </div>  
                     <div class="form-group">
+                    	<label for="SecretQuestion1Answer" class="control-label col-md-2">Answer</label>
+                    	<div class="col-md-6">
+                        	<input type="text" class="form-control" name="Answer1" placeholder="SecretAnswer1">
+                    	</div>
+		    </div>     		
+                    <div class="form-group">
                         <label for="SecretQuestion2" class="control-label col-md-6">Secret Question 2</label>
                             <select class="form-control" name="secretquestionlistopt">
                                 <option>What is your mother's maiden name?</option>
@@ -51,7 +57,13 @@
                                 <option>What is the name of your first pet?</option>
                                 <option>What was the name of the hospital you were born in?</option>
                             </select>
-                    </div>                          
+                    </div>
+		    <div class="form-group">
+                    	<label for="SecretQuestion2Answer" class="control-label col-md-2">Answer</label>
+                    	<div class="col-md-6">
+                        	<input type="text" class="form-control" name="Answer2" placeholder="SecretAnswer2">
+                    	</div>
+               	    </div>  
                     <p>By registering, you agree that you've read and accepted our User Agreement, you're at least 18 years old, and you consent to our Privacy Policy </p>
                     <button type="button" class="btn btn-lg btn-primary btn-block">Register</button>        
                     <br></br>
