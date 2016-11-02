@@ -63,7 +63,7 @@
                     </div>
                 </div>        
                 <div class="form-group">
-                    <label for="state" class="control-label col-md-2">Secret Question 1</label>
+                    <label for="state" class="control-label col-md-2">State</label>
                        <div class="col-md-6">
                         <select class="form-control" name="state">
                             <option>NSW</option>
