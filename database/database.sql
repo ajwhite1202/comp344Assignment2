@@ -71,9 +71,11 @@ FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 /* Table: Session                                               */
 /*==============================================================*/
 
-CREATE TABLE Session (
+CREATE TABLE Sessions (
 id                    INT NOT NULL,
 sh_id                 INT NOT NULL,
+data                  BLOB,
+time                  TIMESTAMP,
 PRIMARY KEY (id),
 FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 );
