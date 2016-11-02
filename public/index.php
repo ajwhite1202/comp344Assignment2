@@ -25,9 +25,9 @@
       <h2>Password Reset Pages (For reference)</h2>
 
     <div class="col-md-4">
-    <p><a href="PasswordResetEmail.php">Password Rest (Email)</a></p>
-    <p><a href="PasswordResetQuestions.php">Password Rest (Questions)</a></p>
-    <p><a href="PasswordResetPassword.php">Password Rest (Password)</a></p>
+    <p><a href="PasswordResetEmail.php">Password Reset (Email)</a></p>
+    <p><a href="PasswordResetQuestions.php">Password Reset (Questions)</a></p>
+    <p><a href="PasswordResetPassword.php">Password Reset (Password)</a></p>
   </div>
 </div>
 
