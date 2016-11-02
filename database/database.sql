@@ -66,3 +66,14 @@ answer                VARCHAR(128) NOT NULL,
 PRIMARY KEY (secret_q_id),
 FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 );
+
+/*==============================================================*/
+/* Table: Session                                               */
+/*==============================================================*/
+
+CREATE TABLE Session (
+id                    INT NOT NULL,
+sh_id                 INT NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
+);
