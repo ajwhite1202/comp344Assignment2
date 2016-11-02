@@ -37,7 +37,7 @@
                     <div class="form-group">
                         <label for="SecretQuestion1" class="control-label col-md-6">Secret Question 1</label>
                             <select class="form-control" name="secretquestionlistopt">
-                                <option>What is your mother's madien name?</option>
+                                <option>What is your mother's maiden name?</option>
                                 <option>What is your favourite subject at school?</option>
                                 <option>What is the name of your first pet?</option>
                                 <option>What was the name of the hospital you were born in?</option>
@@ -46,7 +46,7 @@
                     <div class="form-group">
                         <label for="SecretQuestion2" class="control-label col-md-6">Secret Question 2</label>
                             <select class="form-control" name="secretquestionlistopt">
-                                <option>What is your mother's madien name?</option>
+                                <option>What is your mother's maiden name?</option>
                                 <option>What is your favourite subject at school?</option>
                                 <option>What is the name of your first pet?</option>
                                 <option>What was the name of the hospital you were born in?</option>
