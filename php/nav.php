@@ -8,7 +8,7 @@
   }
 
   function getAccessGroupsOf() {
-    $params = [$_SESSION['username']];
+    $params = $_SESSION['username'];
     $rows = query("SELECT AG_id AS id, AG_name AS name
                     FROM AccessGroup AG
                     INNER JOIN AccessUserGroup AUG ON AG_id = AUG_AG_id
@@ -18,7 +18,7 @@
   }
 
   function getCommandsOf($ag_id) {
-    $params = [$ag_id];
+    $params = $ag_id;
     $rows = query("SELECT Cmd_name AS name, Cmd_URL AS url
                     FROM Commands cmd
                     INNER JOIN AccessGroupCommands agc ON Cmd_id = AGC_Cmd_id
