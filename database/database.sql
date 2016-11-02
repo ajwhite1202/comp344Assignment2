@@ -10,9 +10,9 @@
 /*==============================================================*/
 
 CREATE TABLE Shopper (
-sh_id                   INT NOT NULL AUTO_INCREMENT,
+sh_id                   INT NOT NULL,
 sh_username             VARCHAR(30) NOT NULL,
-sh_password             CHAR(255) NOT NULL,
+sh_password             VARCHAR(255) NOT NULL,
 sh_email                VARCHAR(64) NOT NULL,
 sh_phone                VARCHAR(45) NOT NULL,
 sh_type                 CHAR(1) NULL,
