@@ -70,6 +70,19 @@ FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 );
 
 /*==============================================================*/
+/* Table: Session                                               */
+/*==============================================================*/
+
+CREATE TABLE Sessions (
+id                    INT NOT NULL,
+sh_id                 INT NOT NULL,
+data                  BLOB,
+time                  TIMESTAMP,
+PRIMARY KEY (id),
+FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
+);
+
+/*==============================================================*/
 /* Insert Statements aka dummy data                              */
 /*==============================================================*/
 
@@ -77,3 +90,6 @@ INSERT into Shopper values (1, 'Batman99', 'password1', 'joe_bloggs@gmail.com', 
 INSERT into Shaddr values (1, 1, 'Mr', 'Joe', 'Bloggs', '39 Fake St, Epping', NULL, 'Sydney', 'NSW', '2000', 'Australia'); 
 INSERT into CreditCard values (1, 9998822111, 01, 18 );
 INSERT into SecretQuestion values (1, 1, 'what is your favourite colour?', 'red', 'What was the name of your first pet?', 'Fluffy');
+
+
+

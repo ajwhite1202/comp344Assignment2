@@ -33,8 +33,9 @@
                         <input type="password" class="form-control" name="password" placeholder="Password">
                     <a href="PasswordResetEmail.php">
                       <span data-placement="top" data-toggle="tooltip" title="Edit">
-                        <button class="btn btn-info btn-md" data-title="Edit" data-toggle="modal" data-target="#edit" >Edit<span class="glyphicon glyphicon-edit"></span>
-                        </button>
+                        <div data-title="Edit" data-toggle="modal" data-target="#edit">
+                        Change Password<span class="glyphicon glyphicon-edit"></span>
+                        </div>
                       </span>                    
                     </a>                    
                     </div>
@@ -63,7 +64,7 @@
                     </div>
                 </div>        
                 <div class="form-group">
-                    <label for="state" class="control-label col-md-2">Secret Question 1</label>
+                    <label for="state" class="control-label col-md-2">State</label>
                        <div class="col-md-6">
                         <select class="form-control" name="state">
                             <option>NSW</option>
@@ -110,7 +111,7 @@
                 <div class="form-group">
                     <label for="SecretQuestion1Answer" class="control-label col-md-2">Answer</label>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" name="Answer1" placeholder="SecretAnswer1">
+                        <input type="text" class="form-control" name="Answer1" placeholder="Secret Answer 1">
                     </div>
                 </div>        
                <div class="form-group">
@@ -127,7 +128,7 @@
                 <div class="form-group">
                     <label for="SecretQuestion2Answer" class="control-label col-md-2">Answer</label>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" name="Answer2" placeholder="SecretAnswer2">
+                        <input type="text" class="form-control" name="Answer2" placeholder="Secret Answer 2">
                     </div>
                 </div>                                       
                 <div class="form-group">
