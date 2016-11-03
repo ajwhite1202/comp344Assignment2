@@ -3,7 +3,14 @@
 /* Created on:     26/10/2016 2:09:05 PM                         */
 /*==============================================================*/
 
+create database if not exists demo1;
 
+use demo1;
+
+drop table if exists Shopper;
+drop table if exists Shaddr;
+drop table if exists CreditCard;
+drop table if exists SecretQuestion;
 
 /*==============================================================*/
 /* Table: Shopper                                            */
@@ -48,7 +55,7 @@ FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 
 CREATE TABLE CreditCard (
 sh_id                  INT NOT NULL,
-card_no                INT NOT NULL,
+card_no                BIGINT NOT NULL,
 expiry_month           INT NOT NULL,
 expiry_year            INT NOT NULL,
 FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
