@@ -33,7 +33,7 @@ sh_title                CHAR(8) NOT NULL,
 sh_firstname            VARCHAR(20) NOT NULL,
 sh_familyname           VARCHAR(30) NOT NULL,
 sh_street1              VARCHAR(64) NOT NULL,
-sh_street2              VARCHAR(64) NOT NULL,
+sh_street2              VARCHAR(64) NULL,
 sh_city                 VARCHAR(32) NOT NULL,
 sh_state                VARCHAR(8) NOT NULL,
 sh_postcode             VARCHAR(10) NOT NULL,
@@ -61,8 +61,19 @@ FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 CREATE TABLE SecretQuestion (
 secret_q_id           INT NOT NULL,
 sh_id                 INT NOT NULL,
-question              VARCHAR(128) NOT NULL,
-answer                VARCHAR(128) NOT NULL,
+question1              VARCHAR(128) NOT NULL,
+answer1                VARCHAR(128) NOT NULL,
+question2              VARCHAR(128) NOT NULL,
+answer2                VARCHAR(128) NOT NULL,
 PRIMARY KEY (secret_q_id),
 FOREIGN KEY (sh_id) REFERENCES Shopper(sh_id)
 );
+
+/*==============================================================*/
+/* Insert Statements aka dummy data                              */
+/*==============================================================*/
+
+INSERT into Shopper values (1, 'Batman99', 'password1', 'joe_bloggs@gmail.com', '0499123456', NULL, NULL, NULL, NULL);
+INSERT into Shaddr values (1, 1, 'Mr', 'Joe', 'Bloggs', '39 Fake St, Epping', NULL, 'Sydney', 'NSW', '2000', 'Australia'); 
+INSERT into CreditCard values (1, 9998822111, 01, 18 );
+INSERT into SecretQuestion values (1, 1, 'what is your favourite colour?', 'red', 'What was the name of your first pet?', 'Fluffy');
