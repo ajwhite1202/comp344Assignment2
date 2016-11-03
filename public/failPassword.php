@@ -10,12 +10,12 @@
 <?php require '../php/nav.php'; ?>
 
 <div class="container content">
-    <h1 class="well col-md-8 col-md-offset-2 text-center">Oh No! :(</h1>
+    <h1 class="well col-md-8 col-md-offset-2 text-center">Password Reset is not successful</h1>
     <div class="col-md-8 well col-md-offset-2">
         <div class="row">
             <div class="col-md-12">
                 <div class="row text-center">
-                  <h3> We could not reset your password. Please try again.</h3>   
+                  <h3>Oh no! :(  There seems to trouble on resetting your password. Please try again in a minute.</h3>   
                 </div>
             </div>
         </div>
